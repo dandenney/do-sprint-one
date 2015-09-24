@@ -41,10 +41,10 @@
     font-weight: $weight
     @if $asset-pipeline == true
       src: font-url('#{$path}.eot')
-      src: font-url('#{$path}.eot?#iefix') format('embedded-opentype'), font-url('#{$path}.woff') format('woff'), font-url('#{$path}.ttf') format('truetype'), font-url('#{$path}.svg##{$family}') format('svg')
+      src: font-url('#{$path}.woff') format('woff')
     @else
       src: url('#{$path}.eot')
-      src: url('#{$path}.eot?#iefix') format('embedded-opentype'), url('#{$path}.woff') format('woff'), url('#{$path}.ttf') format('truetype'), url('#{$path}.svg##{$family}') format('svg')
+      src: url('#{$path}.woff') format('woff')
 
 // ----- Respond-to ----- //
 // -> Generates a media query

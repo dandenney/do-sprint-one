@@ -11,8 +11,9 @@
 
 // ----- Averta ----- //
 
-+font-face('Averta', 'Averta')
-+font-face('AvertaBold', 'AvertaBold', bold)
++font-face('Averta', 'Averta', 400)
++font-face('Averta', 'AvertaSemiBold', 600)
++font-face('Averta', 'AvertaBold', 700)
 
 // -------------------------------------
 //   Colors
@@ -20,17 +21,20 @@
 
 // ----- Palette ----- //
 
-$plum: #4e4e5b
+$codGray: #060606
+$osloGray: #8b9394
+$robinEggBlue: #00cfc9
 
 // ----- Base ----- //
 
-$c-background-invert: #fff
-$c-background: #ecf0f1
-$c-border: lighten($plum, 30%)
-$c-highlight: $plum
-$c-subdue: lighten($plum, 40%)
+$c-background-invert: $robinEggBlue
+$c-background: #ffffff
+$c-border: lighten($robinEggBlue, 30%)
+$c-highlight: $robinEggBlue
+$c-subdue: lighten($robinEggBlue, 40%)
+$c-text-alt: $codGray
 $c-text-invert: #fff
-$c-text: #444
+$c-text: $osloGray
 
 // ----- Components ----- //
 
@@ -55,15 +59,16 @@ $b-boxShadow: 0 2px 0 rgba($c-text, 0.25)
 // ----- Typography ----- //
 
 $b-fontFamily-heading: AvertaBold, sans-serif
+$b-fontFamily-subheading: AvertaSemiBold, sans-serif
 $b-fontFamily: Averta, sans-serif
-$b-fontSize: 16px
+$b-fontSize: 12px
 $b-fontSize-xs: 75%
 $b-fontSize-s: 90%
-$b-fontSize-l: 115%
-$b-fontSize-xl: 150%
+$b-fontSize-l: 150%
+$b-fontSize-xl: 200%
 $b-fontSize-h1: 200%
-$b-fontSize-h2: 150%
-$b-fontSize-h3: 125%
+$b-fontSize-h2: 200%
+$b-fontSize-h3: 150%
 $b-fontSize-h4: 110%
 $b-lineHeight: 1.5
 
