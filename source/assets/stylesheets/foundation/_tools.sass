@@ -36,6 +36,11 @@
 .dn
   display: none
 
++respond-to($g-m)
+
+  .db--m
+    display: block
+
 // -------------------------------------
 //   Margin
 // -------------------------------------
@@ -115,6 +120,11 @@
 .mtxl
   margin-top: $b-space-xl
 
++respond-to($g-m)
+
+  .mtf--m
+    margin-top: 0
+
 // -------------------------------------
 //   Padding
 // -------------------------------------
@@ -146,6 +156,12 @@
   padding-bottom: $b-space-l
 .pbxl
   padding-bottom: $b-space-xl
+
++respond-to($g-m)
+
+  .pbl--m
+    padding-bottom: $b-space-l
+
 
 // ----- Left ----- //
 
@@ -188,6 +204,11 @@
 .ptxl
   padding-top: $b-space-xl
 
++respond-to($g-m)
+
+  .ptl--m
+    padding-top: $b-space-l
+
 // -------------------------------------
 //   Positioning
 // -------------------------------------
@@ -196,6 +217,11 @@
   float: left
 .fr
   float: right
+
++respond-to($g-m)
+
+  .fn--m
+    float: none
 
 .poa
   position: absolute
@@ -225,6 +251,8 @@
 
 .tac
   text-align: center
+.tal
+  text-align: left
 .tar
   text-align: right
 
