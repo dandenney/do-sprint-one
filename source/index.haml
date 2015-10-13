@@ -1,19 +1,25 @@
 %section.row
-  .cell.well
+  .cell.ptxl
 
     .g
 
-      .g-b.g-b--m--1of2
+      .g-b.g-b--m--1of3.tal--m
 
-        %h1.ttu Some Damn Good Headline
+        %h1.ttu.mtm--m
 
-        %p= lorem.sentence
+          %span.db--m Some
+          %span.db--m Damn
+          %span.db--m Good
+          %span.db--m Headline
 
-        .btn{ href: '#' } Sketch
+        %p
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique velit massa sit amet dictum sem luctus interdum.
 
-      .g-b.g-b--m--1of2
+        .btn.db--m{ href: '#' } Sketch
 
-        %img.mbl.mtl{ alt: 'iPhone preview', src: '/assets/images/phone.jpg', width: '164' }
+      .g-b.g-b--m--2of3.hero--img
+
+        %img.db.mtl.mtf--m{ alt: 'iPhone preview', src: '/assets/images/phone--l.jpg' }
 
 %section.row.row--peek.pbm.ptm.pbl--m.ptl--m
 
@@ -31,34 +37,47 @@
 
       .g-b.g-b--m--1of3
 
-        %img{ src: '/assets/images/icon-shape.png', width: '110' }
+        .img-columns
+          .img--column
 
-        %h3= lorem.word
+            %img.valign--m{ src: '/assets/images/icon-shape.png', width: '110' }
 
-        %p= lorem.sentence
+        %h3.h2.mts Flexible
 
-      .g-b.g-b--m--1of3
-
-        %img{ src: '/assets/images/icon-wheel.png', width: '103' }
-
-        %h3= lorem.word
-
-        %p= lorem.sentence
+        %p
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique velit massa sit amet dictum sem luctus interdum.
 
       .g-b.g-b--m--1of3
 
-        %img{ src: '/assets/images/icon-bolt.png', width: '61' }
+        .img-columns
+          .img--column
 
-        %h3= lorem.word
+            %img.valign--m{ src: '/assets/images/icon-wheel.png', width: '103' }
 
-        %p= lorem.sentence
+        %h3.h2.mts User Driven
+
+        %p
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique velit massa sit amet dictum sem luctus interdum.
+
+      .g-b.g-b--m--1of3
+
+        .img-columns
+          .img--column
+
+            %img.valign--m{ src: '/assets/images/icon-bolt.png', width: '61' }
+
+        %h3.h2.mts Efficient
+
+        %p
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique velit massa sit amet dictum sem luctus interdum.
 
 %section.row
 
   .cell.well
 
-    %h3.tsxl.ttu= lorem.sentence
+    %h3.tsxl.ttu WTF are you waiting for?
 
-    %p= lorem.sentence
+    %p
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique velit massa sit amet dictum sem luctus interdum.
 
     %a.btn{ href: '#' } Get It Now

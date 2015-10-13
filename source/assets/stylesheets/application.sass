@@ -43,3 +43,25 @@
 // -------------------------------------
 
 // ...
+
+// TODO: Hero Structure
+
+.hero--img
+  overflow: hidden
+  max-height: 500px
+
+// TODO: Image columns structure and a better solution
+
+.img-columns
+  display: table
+  width: 100%
+
+.img--column
+
+  +respond-to($g-m)
+
+    display: table-cell
+    height: 120px
+    text-align: center
+    vertical-align: middle
+    width: 100%
