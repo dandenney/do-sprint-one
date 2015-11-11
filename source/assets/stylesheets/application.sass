@@ -43,6 +43,8 @@
 // -------------------------------------
 
 // ...
+*
+  box-sizing: border-box
 
 // TODO: Hero Structure
 
@@ -65,3 +67,56 @@
     text-align: center
     vertical-align: middle
     width: 100%
+
+// TODO: Come up with a real name and solution
+
+.magic-border
+
+  +respond-to($g-m)
+
+    border: 0
+
+    &::after
+      border-bottom: $b-border
+      content: ""
+      display: block
+      margin: 0 auto
+      width: 30%
+
+// TODO: Toggle Nav structure
+
+.toggleNav--item
+  background: transparent
+  border: 2px solid transparent
+  border-radius: 30px
+  color: $c-highlight
+  display: inline-block
+  font-size: $b-fontSize-h4
+  font-weight: bold
+  letter-spacing: 2px
+  padding: $b-space-s $b-space
+  text-align: center
+  text-transform: uppercase
+  transition: border-color 0.3s
+
+  &:active,
+  &:hover,
+  &:focus
+    border: 2px solid rgba($c-highlight, 0.25)
+    outline: 0
+
+  &.is--active
+    border: 2px $b-borderStyle $c-highlight
+
+// TODO: Preview Structure
+
+.preview-img
+  box-sizing: border-box
+  display: inline-block
+  margin-right: -4px
+  max-width: 50%
+  padding: $b-space-s
+  vertical-align: top
+
+  +respond-to($g-s)
+    max-width: 20%

@@ -9,6 +9,7 @@
     %title= page_title
 
     = stylesheet_link_tag 'application'
+    = stylesheet_link_tag 'vendor/flickity'
 
   %body
 
@@ -17,6 +18,7 @@
     = yield
 
     = javascript_include_tag 'vendor'
+    = javascript_include_tag 'vendor/flickity.pkgd.min'
     = javascript_include_tag 'application'
 
     = partial 'shared/footer'
